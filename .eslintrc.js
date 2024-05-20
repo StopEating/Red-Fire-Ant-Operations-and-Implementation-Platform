@@ -1,13 +1,18 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+      jquery: true
   },
   'extends': [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/typescript/recommended'
   ],
+  global:{
+    'AMap':false,
+    'AMapUI':false
+  },
   parserOptions: {
     ecmaVersion: 2020
   },

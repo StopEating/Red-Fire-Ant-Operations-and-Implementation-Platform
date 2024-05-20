@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
+    "allowJs": true,
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -13,7 +15,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+   "node",
+
     ],
     "paths": {
       "@/*": [
@@ -33,7 +37,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "tools.d.ts"  ],
   "exclude": [
     "node_modules"
   ]
